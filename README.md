@@ -27,7 +27,7 @@ Epochs: `5`
 
 Observations
 - The accuracy was really high, even with just 16 dims, beacuse of less data and prone to overfitting
-- Other Embedding needs to be tired 
-- The dataset is relatively small,   also there is class imbalance, huge, imbalance.
-- The embedding was trained on 6B texts, and has a dimension of `300`, so needs to try with other dimension which would effect model performance 
--
+- Other Embedding needs to be tired , which will effect accuracy (fastetxt, word 2 vec etc)
+- The dataset is relatively small,   also there is class imbalance, huge, imbalance. SMOTE and sampling needs to be tried 
+- The embedding was trained on 6B texts, and has a dimension of `300`, so needs to try with other smaller dimension which would increase model performance 
+- Endoder decoder is not good with long text , as encoder,decoder is slow 
